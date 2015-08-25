@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRE8.GURU</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <link href='http://fonts.googleapis.com/css?family=Syncopate:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <%= link_to "myCre8Guru", "", class: "btn btn-lg btn-success", id: "logo" %>
+    <div class="nav_item">
+      <%= link_to "link 1", "", class: "btn btn-default btn-warning" %>
+    </div>
+    <div class="nav_item">
+      <%= link_to "link 2", "", class: "btn btn-default btn-warning" %>
+    </div>
+    <div class="nav_item">
+      <%= link_to "link 3", "", class: "btn btn-default btn-warning" %>
+    </div>
+  </div>
+</header>
+<div class="container">
+<%= yield %>
+<div class="footer">
+  <p>&copy; 2015 CRE8.GURU</p>
+</div><!--end footer-->
+</div><!--end container-->
+
+</body>
+</html>
